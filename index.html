@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-widh, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>Portofolio Kenzo</title>
+    </head>
+    <body class="body-class">
+        <header class="nav-container">
+            <!-- nav bar -->
+            <a href="http://www.rex.co.id" target="_blank"><img src="assets/LOGO REX.png" class="ourlogo-icon"></a>
+            <nav>
+                <button onclick="window.location.href='#home_content'">Home</button>
+                <button onclick="window.location.href='#service_content'">Service</button>
+                <button onclick="window.location.href='#profile_content'">Profile</button>
+                <button onclick="window.location.href='#messageus_content'">Message Us</button>
+            </nav>
+        </header>
+        <hr>
+
+        <!-- Main Content -->
+        <main class="main-class" id="main_content">
+
+            <!-- Home Content -->
+             <section class="home-section" id="home_content">
+                <header>
+                    <h1 class="title-section">Future is Better</h1>
+                </header>
+                <content>
+                    <div class="slideshow-container">
+
+                        <!-- banner slider -->
+                        <div class="my-slides fade">
+                          <div class="numbertext">1 / 3</div>
+                          <a href="http://www.rex.co.id" target="_blank"><img src="assets/rexbanner1.png" class="banner-image"></a>
+                          <div class="text">Mitra Agent</div>
+                        </div>
+                        
+                        <div class="my-slides fade">
+                          <div class="numbertext">2 / 3</div>
+                          <a href="http://www.rex.co.id" target="_blank"><img src="assets/rexbanner2.png" class="banner-image"></a>
+                          <div class="text">Aplikasi</div>
+                        </div>
+                        
+                        <div class="my-slides fade">
+                          <div class="numbertext">3 / 3</div>
+                          <a href="http://www.rex.co.id" target="_blank"><img src="assets/rexbanner3.png" class="banner-image"></a>
+                          <div class="text">Rex x Tokopedia</div>
+                        </div>
+                        
+                    </div>
+                        <br>
+                        <!-- dots banner -->
+                        <div style="text-align:center">
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                        </div>
+
+                </content>
+             </section>
+             <hr>
+             
+            <!-- Service Content -->
+            <section class="service-section" id="service_content">
+                <header>
+                    <h1 class="title-section">Our Service</h1>
+                </header>
+                <!-- menampilkan service -->
+                <content class="profile-content">
+                    <div class="div-service">
+                        <a href="http://www.rex.co.id" target="_blank"><img src="assets/regular.png" class="icon-service"></a>
+                        <p>Reguler</p>
+                    </div>
+                    <div class="div-service">
+                        <a href="http://www.rex.co.id" target="_blank"><img src="assets/logistik.jpg" class="icon-service"></a>
+                        <p>Logistic</p>
+                    </div>
+                    <div class="div-service">
+                        <a href="http://www.rex.co.id" target="_blank"><img src="assets/rex-0.jpg" class="icon-service"></a>
+                        <p>Sameday</p>
+                    </div>
+                    <div class="div-service">
+                        <a href="http://www.rex.co.id" target="_blank"><img src="assets/international.png" class="icon-service"></a>
+                        <p>International</p>
+                    </div>
+                    
+                </content>
+             </section>
+             <hr>
+             
+            <!-- Portofilio Content -->
+            <section class="our-profile-section" id="profile_content">
+                <header>
+                    <h1 class="title-section">Our Profile</h1>
+                </header>
+                <!-- menampilkan data perusahaan -->
+                <content class="our-profile-content">
+                    <a href="http://www.rex.co.id" target="_blank"><img src="assets/aboutus.png" class="our-profile-icon"></a>
+                    <article class="our-profile-article">
+                        PT Royal Express Indonesia (REX) memfokuskan layanannya sebagai perusahaan jasa pengiriman dokumen dan paket melalui transportasi udara, laut, dan darat dengan tujuan domestik dan juga internasional. Dalam memberikan pelayanannya, REX selalu menempatkan kepuasan pelanggan sebagai prioritas dengan berusaha memenuhi semua kebutuhan pelanggan dengan baik. Untuk bisa meraih sasaran tersebut, REX didukung oleh sumber daya manusia yang handal dan armada yang memadai.
+                    </article>
+                </content>
+             </section>
+             <hr>
+
+            <!-- Message Us Content -->
+            <section class="message-us-section" id="messageus_content">
+                <header>
+                    <h1 class="title-section">Message Us</h1>
+                </header>
+                <!-- menampilkan form message -->
+                <content class="message-us-content">
+                    <form class="message-us-table" id="myForm" name="myForm" onsubmit="return validateForm()">
+                        <table>
+                            <tr>
+                                <td>Nama</td>
+                                <td> : </td>
+                                <td> <input class="message-us-input" type="text" id="name" name="name"> </td>
+                                
+                            </tr>
+                            <tr><td colspan="3"><span id="nameError" class="error"></span><br></td></tr>
+                            <tr>
+                                <td>Tanggal Lahir</td>
+                                <td> : </td>
+                                <td> <input class="message-us-input" type="date" id="birthdate" name="birthdate"> </td>
+                                
+                            </tr>
+                            <tr><td colspan="3"><span id="birthdateError" class="error"></span><br></td></tr>
+                            <tr>
+                                <td>Jenis Kelamin</td>
+                                <td> : </td>
+                                <td> 
+                                    <input type="radio" id="male" name="gender" value="male">
+                                    <label for="male">Laki-laki</label><br>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Perempuan</label><br>
+                                    
+                                </td>
+                                
+                            </tr>
+                            <tr><td colspan="3"<span id="genderError" class="error"></span><br> </td></tr>
+                            <tr>
+                                <td>Pesan</td>
+                                <td> : </td>
+                                <td> <textarea class="message-us-input" style="height:80px;" id="message" name="message"></textarea></td>
+                                
+                            </tr>
+                            <tr><td colspan="3"><span id="messageError" class="error"></span><br></td></tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td colspan="3"><button class="message-us-submit" id="btnSubmit" name="btnSubmit">Submit</button></td>
+                            </tr>
+                        </table>
+                    </form>
+
+                    <!-- menampilkan result -->
+                    <div class="message-us-result">
+                        <div class="message-result" id="formResult" name="formResult">
+                          <h3>Terima Kasih Telah Mengirimkan Pesan</h3>
+                          <p><strong>Nama:</strong> <span id="submittedName"></span></p>
+                          <p><strong>Tanggal Lahir:</strong> <span id="submittedBirthdate"></span></p>
+                          <p><strong>Jenis Kelamin:</strong> <span id="submittedGender"></span></p>
+                          <p><strong>Pesan:</strong> <span id="submittedMessage"></span></p>
+                        </div>
+                        
+                    </div>
+
+                </content>
+             </section>
+        </main>
+<hr>
+        <footer class="my-footer">
+            <p>Created by Kenzo Wijaya</p>
+            <p>@2024</p>
+        </footer>
+        
+    </body>
+    <script src="js/script.js"></script>
+</html>
