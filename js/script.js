@@ -75,3 +75,28 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         document.getElementById('formResult').style.display = 'block';
     } 
 });
+
+
+// javascript button scroll up
+
+// script.js
+// Dapatkan tombol
+let mybutton = document.getElementById("scrollToTopBtn");
+
+// Saat pengguna scroll ke bawah 20px dari atas halaman, tampilkan tombol
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// Saat pengguna mengklik tombol, kembalikan ke atas halaman
+mybutton.onclick = function() {
+    document.body.scrollTop = 0; // Untuk Safari
+    document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE, dan Opera
+}
+

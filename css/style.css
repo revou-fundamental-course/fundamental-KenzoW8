@@ -161,8 +161,8 @@ img {vertical-align: middle;}
 }
 
 
-/* css responsive with min width 381px max widh 720px */
-@media only screen and (min-width:381px) and (max-width: 720px)  {
+/* css responsive with min width 481px max widh 720px */
+@media only screen and (min-width:481px) and (max-width: 720px)  {
     /* for title */
     .title-section{
         text-align: center;
@@ -205,6 +205,81 @@ img {vertical-align: middle;}
 
     .our-profile-section{
         height: 720px;
+    }
+
+    .our-profile-icon{
+        height: 120px;
+        width: 120px;
+    }
+
+    .profile-content{
+        flex-direction: column;
+    }
+
+    /* message us */
+    .message-us-content{
+        flex-direction: column;
+        height: 480px !important;
+    }
+
+    .message-us-section{
+        height: 780px !important;
+    }
+
+    .message-us-result{
+        margin-top: 10%;
+    }
+
+    .message-us-table{
+        align-self: center;
+    }
+
+}
+
+/* css responsive with min width 381px max widh 480px */
+@media only screen and (min-width:381px) and (max-width: 480px)  {
+    /* for title */
+    .title-section{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    /* for nav */
+    .nav-container{
+        flex-direction: column;
+        height: 90px;
+        padding-top: 5%;
+    }
+
+    /* for banner / slide*/
+    .text {font-size: 11px}
+    .banner-image{max-width: 100%; max-height: 260px;}
+
+    /* for service / profile */
+    .icon-service{
+        max-width: 140px;
+        max-height: 140px;
+        border: 1px solid;
+        border-radius: 100%;
+    }
+    .div-service{
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .service-section{
+        height: 900px !important;
+        margin-bottom: 10%;
+    }
+
+    .our-profile-content{
+        flex-direction: column;
+        justify-content: space-around !important;
+        height: 720px !important;
+    }
+
+    .our-profile-section{
+        height: 820px !important;
     }
 
     .our-profile-icon{
@@ -395,4 +470,27 @@ table>td{
     font-size: 10px;
     margin-left: 2%;
     text-align: justify;
+}
+
+
+/* scroll up button style */
+
+/* style.css */
+#scrollToTopBtn {
+    display: none; /* Sembunyikan tombol secara default */
+    position: fixed; /* Posisi tetap di sudut kanan bawah */
+    bottom: 20px;
+    right: 30px;
+    z-index: 99; /* Pastikan tombol berada di atas konten lainnya */
+    border: none; /* Hilangkan border */
+    outline: none; /* Hilangkan outline */
+    background-color: #ffef0e; /* Warna background */
+    color: rgb(61, 61, 61); /* Warna teks */
+    cursor: pointer; /* Ubah kursor saat di-hover */
+    padding: 15px; /* Padding untuk tombol */
+    border-radius: 10px; /* Membuat sudut tombol membulat */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #f5f106; /* Warna background saat di-hover */
 }
